@@ -1,4 +1,4 @@
-public class Soma {             //tudo que começa com letra maiuscula é classe.
+public class Soma {             //tudo que começa com letra maiuscula é classe e metodo com letra minuscula.
     public static void main(    // pornto é operador de acesso
         String[]args){
             int x =0; 
