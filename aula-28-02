@@ -21,10 +21,24 @@ import java.util.Scanner;
 public class Soma {            
     public static void main(
         String[]args){
-            Scanner x = new Scanner(System.in);
-            int z; 
-            z = x.nextInt();
+            Scanner sc = new Scanner(System.in);
+            int x; 
+            x = sc.nextInt();
             //ou
-            int y = x.nextInt();
+            int y = sc.nextInt();
+
+            if(y>x){
+                int aux = x;
+                x = y;
+                y = aux;
+            }
+            int soma = 0;
+            for(int i = x; i < y; i++){
+                if(i%2 == 1){
+                    System.out.println(soma);
+                    soma = i + soma;
+                }
+            }
+            System.out.println(soma);
     }
 }
