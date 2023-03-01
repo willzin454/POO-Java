@@ -15,3 +15,16 @@ public class Soma {             //tudo que começa com letra maiuscula é classe
 //Como fazer um for
 //for( i = 0; 10 ;i++){
 //}
+--------------------------------------------------------
+import java.util.Scanner;
+
+public class Soma {            
+    public static void main(
+        String[]args){
+            Scanner x = new Scanner(System.in);
+            int z; 
+            z = x.nextInt();
+            //ou
+            int y = x.nextInt();
+    }
+}
