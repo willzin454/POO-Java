@@ -1,0 +1,37 @@
+package br.ifpr.paranavai.polimorfismo;
+
+public class App {
+    public static void main(String[] args) {
+        int x[] = { 1, 2, 3, 4 , 5, 6};
+        System.out.println("Hellow, Word!");
+        System.err.println(1);
+        System.out.println(somar(1, 5));
+        System.out.println(somar(1, 5.0));
+        System.out.println(somar("12", "12"));
+        System.out.println(somar(x));
+    }
+
+    // somar (double, double)
+    public static double somar(double x, double y) {
+        return x + y;
+    }
+
+    // somar (String, String)
+    public static double somar(String x, String y) {
+        int a = Integer.parseInt(x);
+        int b = Integer.parseInt(y);
+        return a + b;
+    }
+
+    public static int somar(int[] x) {
+        int soma = 0;
+        for (int i = 0; i < x.length; i++) {
+            soma += x[i];
+        }
+        return soma;
+    }
+
+    public static double somar(double[]... x){
+
+    }
+}
