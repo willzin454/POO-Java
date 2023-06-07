@@ -1,0 +1,25 @@
+class Animal {
+    public void fazerBarulho() {
+        System.out.println("O animal faz barulho!");
+    }
+}
+
+class Cachorro extends Animal {
+    @Override
+    public void fazerBarulho() {
+        System.out.println("O cachorro late!");
+    }
+}
+
+public class ExemploSobreescrita {
+    public static void main(String[] args) {
+        Animal animal = new Animal();
+        animal.fazerBarulho();  // Saída: O animal faz barulho!
+        
+        Cachorro cachorro = new Cachorro();
+        cachorro.fazerBarulho();  // Saída: O cachorro late!
+        
+        Animal outroAnimal = new Cachorro();
+        outroAnimal.fazerBarulho();  // Saída: O cachorro late!
+    }
+}
