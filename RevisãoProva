@@ -1,0 +1,6 @@
+public class Adsl implements Conexao {
+        boolean isConectado;
+        public boolean conectar(double tempo){
+	      return True;
+        }
+    }
